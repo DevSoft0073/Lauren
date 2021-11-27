@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TitleImageCollectionCell" customModule="Lauren" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="154"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="240" height="154"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gsc-dN-V9p">
+                        <rect key="frame" x="8" y="0.0" width="224" height="154"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trainingBG" translatesAutoresizingMaskIntoConstraints="NO" id="Yo4-8G-F5k">
+                        <rect key="frame" x="0.0" y="23" width="240" height="108"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Gsc-dN-V9p" secondAttribute="bottom" id="MkC-bg-fEX"/>
+                <constraint firstAttribute="trailing" secondItem="Gsc-dN-V9p" secondAttribute="trailing" constant="8" id="Nwf-1Y-4lm"/>
+                <constraint firstItem="Yo4-8G-F5k" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="eqV-ws-WFG"/>
+                <constraint firstItem="Yo4-8G-F5k" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="g7H-Rr-qks"/>
+                <constraint firstItem="Gsc-dN-V9p" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="igx-lB-RCR"/>
+                <constraint firstItem="Yo4-8G-F5k" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.7" id="qrY-yd-mLe"/>
+                <constraint firstItem="Gsc-dN-V9p" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="rZV-dd-CuG"/>
+                <constraint firstItem="Yo4-8G-F5k" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="wPK-a2-WpZ"/>
+            </constraints>
+            <size key="customSize" width="240" height="154"/>
+            <connections>
+                <outlet property="imageView" destination="Yo4-8G-F5k" id="feX-bP-mEL"/>
+                <outlet property="lineView" destination="Gsc-dN-V9p" id="3ss-Jg-0Yn"/>
+            </connections>
+            <point key="canvasLocation" x="278.26086956521743" y="92.410714285714278"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="trainingBG" width="169" height="56.5"/>
+    </resources>
+</document>

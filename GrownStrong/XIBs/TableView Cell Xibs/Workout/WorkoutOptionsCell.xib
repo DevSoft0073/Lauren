@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+        <array key="OpenSansHebrew-Bold.ttf">
+            <string>OpenSansHebrew-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="72" id="KGk-i7-Jjw" customClass="WorkoutOptionsCell" customModule="Lauren" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="380" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy13" translatesAutoresizingMaskIntoConstraints="NO" id="0jA-Py-7I7">
+                        <rect key="frame" x="16" y="20" width="38" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="38" id="AuJ-dJ-CAC"/>
+                            <constraint firstAttribute="height" constant="32" id="Vdl-ch-QSh"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200 meter Run" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCn-q4-vxN">
+                        <rect key="frame" x="70" y="14" width="120.5" height="23.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gl-3A-k2S">
+                        <rect key="frame" x="70" y="41.5" width="33" height="16.5"/>
+                        <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="12"/>
+                        <color key="textColor" red="0.93333333330000001" green="0.4549019608" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3DotOption" translatesAutoresizingMaskIntoConstraints="NO" id="hpj-tf-lVJ">
+                        <rect key="frame" x="316" y="20" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="XcM-dR-3zM"/>
+                            <constraint firstAttribute="height" constant="32" id="l84-Ip-v8V"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0jA-Py-7I7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="2Fj-Pp-nX8"/>
+                    <constraint firstItem="0gl-3A-k2S" firstAttribute="leading" secondItem="xCn-q4-vxN" secondAttribute="leading" id="311-ou-Hc4"/>
+                    <constraint firstItem="hpj-tf-lVJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="8kX-wj-W86"/>
+                    <constraint firstItem="0gl-3A-k2S" firstAttribute="bottom" secondItem="0jA-Py-7I7" secondAttribute="bottom" constant="6" id="9iV-h6-wRb"/>
+                    <constraint firstItem="xCn-q4-vxN" firstAttribute="leading" secondItem="0jA-Py-7I7" secondAttribute="trailing" constant="16" id="CeQ-YU-0Iv"/>
+                    <constraint firstItem="0jA-Py-7I7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="DaU-D4-DJR"/>
+                    <constraint firstItem="xCn-q4-vxN" firstAttribute="top" secondItem="0jA-Py-7I7" secondAttribute="top" constant="-6" id="ISh-a2-uc6"/>
+                    <constraint firstAttribute="trailing" secondItem="hpj-tf-lVJ" secondAttribute="trailing" constant="32" id="g6X-9c-BuP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageWidthConst" destination="AuJ-dJ-CAC" id="70K-XN-Ghb"/>
+                <outlet property="imgView" destination="0jA-Py-7I7" id="kHR-6C-8dQ"/>
+                <outlet property="optionBtn" destination="hpj-tf-lVJ" id="sYA-gu-Gqf"/>
+                <outlet property="timeLbl" destination="0gl-3A-k2S" id="74g-ST-mTS"/>
+                <outlet property="titleLbl" destination="xCn-q4-vxN" id="zE0-py-Ygv"/>
+                <outlet property="titleTopConstraint" destination="ISh-a2-uc6" id="VcL-i7-TlZ"/>
+            </connections>
+            <point key="canvasLocation" x="184.05797101449278" y="46.875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="3DotOption" width="24" height="24"/>
+        <image name="dummy13" width="39" height="32.5"/>
+    </resources>
+</document>

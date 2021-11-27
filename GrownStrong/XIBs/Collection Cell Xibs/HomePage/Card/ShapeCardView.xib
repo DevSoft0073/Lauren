@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <view contentMode="scaleToFill" id="Ppz-gj-Pmx" customClass="ShapeCardView" customModule="GrownStrong" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="551" height="774"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="osk-ZD-7dD">
+                    <rect key="frame" x="0.0" y="0.0" width="551" height="774"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" image="dummy16" translatesAutoresizingMaskIntoConstraints="NO" id="rmw-sA-AN8">
+                            <rect key="frame" x="0.0" y="0.0" width="551" height="774"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="100"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="rmw-sA-AN8" secondAttribute="bottom" id="8AY-W9-VMj"/>
+                        <constraint firstAttribute="trailing" secondItem="rmw-sA-AN8" secondAttribute="trailing" id="Grh-ho-JgC"/>
+                        <constraint firstItem="rmw-sA-AN8" firstAttribute="leading" secondItem="osk-ZD-7dD" secondAttribute="leading" id="VPQ-4v-Edv"/>
+                        <constraint firstItem="rmw-sA-AN8" firstAttribute="top" secondItem="osk-ZD-7dD" secondAttribute="top" id="eZb-K6-sSf"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="osk-ZD-7dD" secondAttribute="bottom" id="KJJ-bg-dhI"/>
+                <constraint firstItem="osk-ZD-7dD" firstAttribute="leading" secondItem="Ppz-gj-Pmx" secondAttribute="leading" id="QT1-i5-P3o"/>
+                <constraint firstItem="osk-ZD-7dD" firstAttribute="top" secondItem="Ppz-gj-Pmx" secondAttribute="top" id="gA9-jV-Rb9"/>
+                <constraint firstAttribute="trailing" secondItem="osk-ZD-7dD" secondAttribute="trailing" id="z8n-lE-d5R"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="rmw-sA-AN8" id="c3x-g1-Okw"/>
+            </connections>
+            <point key="canvasLocation" x="448.55072463768118" y="900.66964285714278"/>
+        </view>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+    <resources>
+        <image name="dummy16" width="303" height="265"/>
+    </resources>
+</document>

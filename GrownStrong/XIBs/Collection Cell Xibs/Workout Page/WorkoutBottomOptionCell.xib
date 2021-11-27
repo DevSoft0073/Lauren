@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WorkoutBottomOptionCell" customModule="Lauren" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="236" height="279"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="236" height="279"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25 Min." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utp-LO-aDn">
+                        <rect key="frame" x="8" y="240.5" width="34.5" height="14"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="10"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img3" translatesAutoresizingMaskIntoConstraints="NO" id="F71-Iy-QGp">
+                        <rect key="frame" x="8" y="0.0" width="220" height="195.5"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO EQUIPMENT NEEDED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56k-TB-afU">
+                        <rect key="frame" x="8" y="203.5" width="116.5" height="14"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="10"/>
+                        <color key="textColor" red="0.93333333330000001" green="0.4549019608" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skyblueshade" translatesAutoresizingMaskIntoConstraints="NO" id="9BT-fz-3MS">
+                        <rect key="frame" x="8" y="0.0" width="220" height="195.5"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25 Home Bodyweight Workouts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAU-he-kqr">
+                        <rect key="frame" x="8" y="221.5" width="220" height="15"/>
+                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="11"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vj7-Uf-HW3">
+                        <rect key="frame" x="184" y="16" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="Iv3-TJ-ugI"/>
+                            <constraint firstAttribute="width" constant="36" id="Uhc-Be-oKZ"/>
+                        </constraints>
+                        <state key="normal" image="fullSaved"/>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="F71-Iy-QGp" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.7" id="8ME-lb-h6U"/>
+                <constraint firstItem="zAU-he-kqr" firstAttribute="leading" secondItem="56k-TB-afU" secondAttribute="leading" id="DO6-eh-x4x"/>
+                <constraint firstItem="56k-TB-afU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="ND6-aO-O4k"/>
+                <constraint firstItem="vj7-Uf-HW3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="OPY-Z7-Ej0"/>
+                <constraint firstItem="9BT-fz-3MS" firstAttribute="height" secondItem="F71-Iy-QGp" secondAttribute="height" id="THt-f9-fpD"/>
+                <constraint firstItem="F71-Iy-QGp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="XB6-Ew-TtP"/>
+                <constraint firstItem="zAU-he-kqr" firstAttribute="top" secondItem="56k-TB-afU" secondAttribute="bottom" constant="4" id="ZxE-Op-7aJ"/>
+                <constraint firstItem="9BT-fz-3MS" firstAttribute="centerY" secondItem="F71-Iy-QGp" secondAttribute="centerY" id="fzY-zc-sf1"/>
+                <constraint firstItem="F71-Iy-QGp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="geQ-9G-UzK"/>
+                <constraint firstItem="zAU-he-kqr" firstAttribute="trailing" secondItem="F71-Iy-QGp" secondAttribute="trailing" id="ggy-T6-ZOe"/>
+                <constraint firstItem="utp-LO-aDn" firstAttribute="top" secondItem="zAU-he-kqr" secondAttribute="bottom" constant="4" id="hdm-O8-SW2"/>
+                <constraint firstItem="9BT-fz-3MS" firstAttribute="width" secondItem="F71-Iy-QGp" secondAttribute="width" id="kqG-3m-IrH"/>
+                <constraint firstItem="56k-TB-afU" firstAttribute="top" secondItem="F71-Iy-QGp" secondAttribute="bottom" constant="8" symbolic="YES" id="lAh-Zh-Eu6"/>
+                <constraint firstItem="utp-LO-aDn" firstAttribute="leading" secondItem="zAU-he-kqr" secondAttribute="leading" id="m7s-fX-pSu"/>
+                <constraint firstAttribute="trailing" secondItem="vj7-Uf-HW3" secondAttribute="trailing" constant="16" id="ucK-wO-UcW"/>
+                <constraint firstAttribute="trailing" secondItem="F71-Iy-QGp" secondAttribute="trailing" constant="8" id="xSk-YJ-sfC"/>
+                <constraint firstItem="9BT-fz-3MS" firstAttribute="centerX" secondItem="F71-Iy-QGp" secondAttribute="centerX" id="y1s-5p-db8"/>
+            </constraints>
+            <size key="customSize" width="236" height="279"/>
+            <connections>
+                <outlet property="equipmentLbl" destination="56k-TB-afU" id="KEj-3h-tMg"/>
+                <outlet property="imgView" destination="F71-Iy-QGp" id="kr7-dL-CD0"/>
+                <outlet property="saveBtn" destination="vj7-Uf-HW3" id="mfs-EN-EPg"/>
+                <outlet property="timeLbl" destination="utp-LO-aDn" id="nEd-Ia-rpl"/>
+                <outlet property="titleLbl" destination="zAU-he-kqr" id="kmT-v4-CKp"/>
+            </connections>
+            <point key="canvasLocation" x="273.91304347826087" y="107.47767857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="fullSaved" width="14" height="17"/>
+        <image name="img3" width="160.5" height="148.5"/>
+        <image name="skyblueshade" width="191" height="125"/>
+    </resources>
+</document>
